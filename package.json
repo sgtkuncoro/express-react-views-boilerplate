@@ -1,0 +1,32 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "A simple blog with simple authentication and shows how to add, view, edit and delete posts",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "express": "^4.16.2",
+    "nodemon": "^1.14.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgtkuncoro/my-blog.git"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mongodb",
+    "blog"
+  ],
+  "author": "sigit kuncoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgtkuncoro/my-blog/issues"
+  },
+  "homepage": "https://github.com/sgtkuncoro/my-blog#readme"
+}
