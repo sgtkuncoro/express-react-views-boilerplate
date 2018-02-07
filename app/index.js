@@ -5,6 +5,8 @@ var express = require('express');
 var app = express();
 
 module.exports = function () {
+
+    var config = require('./config')(app);
     
     app.use('/', require('./routes'));
     

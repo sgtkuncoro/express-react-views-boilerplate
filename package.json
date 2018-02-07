@@ -4,8 +4,12 @@
   "description": "A simple blog with simple authentication and shows how to add, view, edit and delete posts",
   "main": "index.js",
   "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
     "chalk": "^2.3.0",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
     "mongoose": "^4.10.8",
     "nodemon": "^1.14.12"
   },

@@ -16,7 +16,6 @@ var options = {
 };
 
 var db = mongoose.connect(env.DATABASE_URI, options, function (err) {
-    console.log(env.DATABASE_URI)
     if (err) {
         console.log('Database Connection is Failed!')
     }
