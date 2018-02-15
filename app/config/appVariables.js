@@ -11,5 +11,5 @@ var viewPath = path.join(rootPath, 'views');
 module.exports = function (app) {
     app.setValue('env', envPath);
     app.setValue('views', viewPath);
-    app.setValue('view engine', 'handlebars');
+    app.setValue('view engine', 'html');
 };

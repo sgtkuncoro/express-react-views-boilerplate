@@ -4,8 +4,8 @@
   "description": "A simple blog with simple authentication and shows how to add, view, edit and delete posts",
   "main": "index.js",
   "dependencies": {
-    "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
     "chalk": "^2.3.0",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
@@ -15,7 +15,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon ./main.js"
+    "start": "nodemon ./main.js",
+    "test": "set NODE_ENV=test&&mocha -R spec ./test",
+    "deploy": "set NODE_ENV=production&& pm2 start ./main.js"
   },
   "repository": {
     "type": "git",

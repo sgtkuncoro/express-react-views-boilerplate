@@ -13,9 +13,9 @@ module.exports = function (app, db) {
     require('./staticMiddleware')(app);
     require('./parsingMiddleware')(app);
 
-    app.engine('handlebars', exhbs({
-        defaultLayout: 'layout'
+    app.engine('html', exhbs({
+        defaultLayout: "main",
+        extname: '.html'
     }));
-    
 
 };

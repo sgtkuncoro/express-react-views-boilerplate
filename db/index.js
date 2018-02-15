@@ -3,6 +3,7 @@
 var path = require('path');
 var chalk = require('chalk');
 var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 
 var env = require(path.join(__dirname, '../env'));
 
