@@ -5,15 +5,15 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "chai": "^4.1.2",
-    "chalk": "^2.3.0",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
-    "mongoose": "^4.10.8",
-    "nodemon": "^1.14.12"
+    "mongoose": "^4.10.8"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chalk": "^2.3.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3"
+  },
   "scripts": {
     "start": "nodemon ./main.js",
     "test": "set NODE_ENV=test&&mocha -R spec ./test",
