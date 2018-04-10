@@ -4,8 +4,9 @@ var router = require('express').Router();
 
 module.exports = router;
 
-router.get('/', function (req, res, next) {
-    res.render('index', {
+router.get('/', (req, res, next) => {
+    res.sendFile('views/index', {
         title: 'Home'
     });
+    console.log(next);
 })
