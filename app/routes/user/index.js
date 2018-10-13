@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-var router = require('express').Router();
+var router = require("express").Router();
 
 module.exports = router;
 
-router.get('/', function (req, res) {
-    res.send('Hallo i am from user!');
-})
+router.get("/", (req, res) => {
+  res.render("Page/User", { title: "User" });
+});

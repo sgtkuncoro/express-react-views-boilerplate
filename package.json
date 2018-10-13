@@ -1,38 +1,53 @@
 {
-  "name": "my-blog",
+  "name": "express-react-views-boilerplate",
   "version": "1.0.0",
-  "description": "A simple blog with simple authentication and shows how to add, view, edit and delete posts",
+  "description": "Skeleton Web App, using Express and Express React view engine, which renders React components on server. It render static markup and *does not* support mounting those views on the client.",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
-    "mongoose": "^4.10.8"
+    "express-react-views": "^0.10.5",
+    "mongoose": "^4.10.8",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "chalk": "^2.3.2",
     "morgan": "^1.9.0",
-    "nodemon": "^1.17.3"
+    "nodemon": "^1.17.3",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "prettier": "^1.12.1"
   },
   "scripts": {
-    "start": "nodemon ./main.js",
+    "start": "nodemon --exec babel-node -- ./main.js",
     "test": "set NODE_ENV=test&&mocha -R spec ./test",
     "deploy": "set NODE_ENV=production&& pm2 start ./main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sgtkuncoro/my-blog.git"
+    "url": "git+https://github.com/sgtkuncoro/express-react-views-boilerplate.git"
   },
   "keywords": [
     "nodejs",
-    "expressjs",
-    "mongodb",
-    "blog"
+    "expres",
+    "react",
+    "views"
   ],
   "author": "sigit kuncoro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sgtkuncoro/my-blog/issues"
+    "url": "https://github.com/sgtkuncoro/express-react-views-boilerplate/issues"
   },
-  "homepage": "https://github.com/sgtkuncoro/my-blog#readme"
+  "homepage": "https://github.com/sgtkuncoro/express-react-views-boilerplate#readme"
 }

@@ -1,20 +1,14 @@
-// 'use strict';
+"use strict";
 
-var path = require('path');
-var devConfigPath = path.join(__dirname, './development.js');
-var testConfigPath = path.join(__dirname, './testing.js');
-var productionConfigPath = path.join(__dirname, './production.js');
+var path = require("path");
+var dev = path.join(__dirname, "./dev.js");
+var test = path.join(__dirname, "./test.js");
+var prod = path.join(__dirname, "./prod.js");
 
-if (process.env.NODE_ENV === 'production') {
-
-    module.exports = require(productionConfigPath);
-
-} else if (process.env.NODE_ENV === 'test') {
-
-    module.exports = require(testConfigPath);
-
+if (process.env.NODE_ENV === "prod") {
+  module.exports = require(prod);
+} else if (process.env.NODE_ENV === "test") {
+  module.exports = require(test);
 } else {
-
-    module.exports = require(devConfigPath);
-
+  module.exports = require(dev);
 }

@@ -1,21 +1,14 @@
-'use strict';
+"use strict";
 
-var chalk = require('chalk')
-var server = require('http').createServer();
+var chalk = require("chalk");
+var server = require("http").createServer();
 
 /* attach the express application.  */
-var createApplication = function () {
-    var db = require('./db');
-    var app = require('./app')();
-    server.on('request', app);
-}
+var app = require("./app")();
+server.on("request", app);
 
-var startServer = function (createApp) {
-    var PORT = process.env.PORT || 3000;
-    server.listen(PORT, function () {
-        console.log(chalk.blue('Server started on port', chalk.magenta(PORT)))
-    })
-}
+var PORT = process.env.PORT || 3000;
 
-/* execute */
-startServer(createApplication());
+server.listen(PORT, () => {
+  console.log(chalk.blue("Server started on port", chalk.magenta(PORT)));
+});
